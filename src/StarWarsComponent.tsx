@@ -67,12 +67,8 @@ function StarWarsComponent() {
           setHasMoreData(false); // No more data available
         } else {
           setCharacters((prevCharacters) => [...prevCharacters, ...data.results]);
-          // setCharacters([...characters, ...data.results]);
-           // Concatenate new data
         }
         setLoading(false);
-        // setCharacters(data.results);
-        // setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
