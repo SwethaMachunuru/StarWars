@@ -1,0 +1,35 @@
+.characterList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pagination {
+    margin-top: 0px;
+}
+
+.sortButtonContainer {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+.previousButton {
+    margin-right: 40px !important;
+}
+
+.sortButton {
+    margin-left: 22px !important;
+}
+
+.currentPageText {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.heading {
+    color: black;
+}
+
+.buttonContainer {
+    margin-right: -218px;
+}
