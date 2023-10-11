@@ -88,7 +88,7 @@ function StarWarsComponent() {
   };
 
   const handleNextClick = () => {
-    if (hasMoreData) {
+    if (characters.length > endIndex) {
       setCurrentPage(currentPage + 1);
     }
   };
@@ -251,7 +251,7 @@ function StarWarsComponent() {
           <Button
             variant="contained"
             onClick={handleNextClick}
-            disabled={!hasMoreData}
+            disabled={characters.length <= endIndex}
           >
             Next
           </Button>
